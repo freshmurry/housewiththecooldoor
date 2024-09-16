@@ -117,7 +117,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hashie (5.0.0)
@@ -179,6 +179,8 @@ GEM
     net-ssh (7.2.3)
     nio4r (2.7.3)
     nokogiri (1.15.6-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.6-x86_64-linux)
       racc (~> 1.4)
     oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
@@ -335,6 +337,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-17
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk (~> 2.8)
