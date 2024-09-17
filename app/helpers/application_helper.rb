@@ -7,8 +7,6 @@
 #   end
 # end
 
-require 'net/http'
-
 module ApplicationHelper
   def image(user)
     if user.email.present?
