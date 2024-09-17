@@ -89,13 +89,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   #Required for Heroku
-  # config.action_mailer.default_url_options = { host: 'housewiththecooldoor.herokuapp.com' }
+  # config.action_mailer.default_url_options = { host: 'housewiththecooldoor.com' }
 
   config.action_mailer.raise_delivery_errors = true
   
     config.action_mailer.delivery_method = :smtp
     # host = 'shindigspace.com'
-    config.action_mailer.default_url_options = { host: 'https://housewiththecooldoor.herokuapp.com' }
+    config.action_mailer.default_url_options = { host: 'https://housewiththecooldoor.com' }
     ActionMailer::Base.smtp_settings = {
       :address        => 'smtp.sendgrid.net',
       :port           => '587',
