@@ -59,7 +59,7 @@ HouseWithTheCoolDoor::Application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
   #Required for Heroku
-  config.action_mailer.default_url_options = { host: 'https://53a28e1b61b0447789128d2818d3f2c6.vfs.cloud9.us-east-1.amazonaws.com/' }
+  config.action_mailer.default_url_options = { host: 'localhost:8080' }
 
   # Mailgun Integration
   

@@ -50,8 +50,8 @@ Rails.application.configure do
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
-  config.web_socket_server_url = "wss://action-cable-murrywedding.herokuapp.com/cable"
-  config.action_cable.allowed_request_origins = ['https://action-cable-murrywedding.herokuapp.com/cable', 'https://action-cable-murrywedding.herokuapp.com/cable' ]
+  config.web_socket_server_url = "wss://action-cable-housewiththecooldoor-a22ac755088b.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://action-cable-housewiththecooldoor-a22ac755088b.herokuapp.com/cable', 'https://action-cable-housewiththecooldoor.herokuapp.com/cable' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
