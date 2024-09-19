@@ -1,14 +1,17 @@
 Rails.application.configure do
   config.paperclip_defaults = {
-    :storage => :s3,
-    s3_host_name: "s3-#{ENV['AWS_REGION']}.amazonaws.com",
-    :s3_credentials => {
-      :bucket => ENV['S3_BUCKET_NAME'],
-      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
-      :s3_region => ENV['AWS_REGION']
-    }
-  }
+  storage: :s3,
+  s3_host_name: "s3-#{ENV['AWS_REGION']}.amazonaws.com",
+  s3_permissions: 'public-read',  # Make sure files are publicly accessible
+  s3_credentials: {
+    bucket: ENV['S3_BUCKET_NAME'],
+    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+    s3_region: ENV['AWS_REGION']
+  },
+  url: ':s3_domain_url',  # Ensure correct URL generation
+  path: '/:class/:attachment/:id_partition/:style/:filename'  # Define file path in S3
+}
 
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -94,7 +97,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   
     config.action_mailer.delivery_method = :smtp
-    # host = 'shindigspace.com'
+    # host = 'housewithecooldoor.com'
     config.action_mailer.default_url_options = { host: 'housewiththecooldoor.com' }
     ActionMailer::Base.smtp_settings = {
       :address        => 'smtp.sendgrid.net',
