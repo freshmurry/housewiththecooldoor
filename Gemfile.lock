@@ -205,7 +205,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-    pg (0.20.0)
+    pg (1.5.9)
     public_suffix (5.1.1)
     puma (6.4.2)
       nio4r (~> 2.0)
@@ -358,7 +358,7 @@ DEPENDENCIES
   omniauth (~> 1.6)
   omniauth-facebook (~> 4.0)
   paperclip (~> 5.1.0)
-  pg (~> 0.20.0)
+  pg
   puma
   rails (~> 5.0.3)
   rails_12factor
